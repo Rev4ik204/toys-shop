@@ -24,3 +24,31 @@ body {
   background-color: rgb(151, 148, 153);
   color: var(--text-color);
 }
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.color_svg {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(2%)
+    hue-rotate(96deg) brightness(108%) contrast(100%);
+}
+.color2_svg {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(9%) saturate(644%)
+    hue-rotate(354deg) brightness(102%) contrast(80%);
+}
+
+.sub_social_list_item:first-child:hover,
+.sub_social_list_item:first-child:focus,
+.sub_social_list_item_list_item:hover,
+.sub_social_list_item_list_item:focus {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(77%) saturate(7219%)
+    hue-rotate(281deg) brightness(99%) contrast(107%);
+
+     transform: rotate(360deg);
+    transition: transform 1s  cubic-bezier(0.075, 0.82, 0.165, 1) ;
+    /* transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
