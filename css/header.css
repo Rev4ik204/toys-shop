@@ -183,7 +183,9 @@
 }
 
 .basket_block:hover,
-.basket_block:focus {
+.basket_block:focus,
+.post_header_btn:hover,
+.post_header_btn:focus {
   /* background: linear-gradient(96.96deg, #dd0a89 0.12%, #62117e 143.02%); */
   border: 2px solid #000;
 }
@@ -299,8 +301,19 @@
   display: block;
 }
 
-.post_dropdown:hover .post_dropdown_content {
-  display: block;
+.post_dropdown:hover,
+.post_dropdown:focus {
+  .post_dropdown_content {
+    display: block;
+  }
+  .post_nav_list_item_link {
+    color: #e026ee;
+  }
+}
+
+.post_drop_list_item_link:hover,
+.post_drop_list_item_link:focus {
+  color: #e026ee;
 }
 
 .post_header_btn {
@@ -312,7 +325,7 @@
 
   border-radius: 30px;
   padding: 10px 18px;
-  
+
   height: 46px;
 
   box-shadow:
