@@ -1,8 +1,9 @@
 .sect_slime {
-  padding: 80px 391px 95px 391px;
-
   .container {
-    max-width: 1138px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+
+    /* max-width: 1138px; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -97,8 +98,14 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 147%;
-    white-space: nowrap;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     overflow: hidden;
+
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
     text-overflow: ellipsis;
     color: #1a1a1a;
   }
@@ -110,7 +117,6 @@
   }
 
   .price {
-    display: block;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 17px;
@@ -118,7 +124,6 @@
   }
 
   .price_old {
-    display: block;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
