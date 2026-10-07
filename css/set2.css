@@ -1,14 +1,14 @@
-.sect_fillers {
+.sect_set2 {
   .container {
     padding-top: 30px;
-    padding-bottom: 80px;
+    /* padding-bottom: 30px; */
 
     /* max-width: 1138px; */
     margin-left: auto;
     margin-right: auto;
   }
 
-  .sect_fillers_header {
+  .sect_set2_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@
     height: 102px;
   }
 
-  .sect_fillers_content {
+  .sect_set2_content {
     width: 750px;
     height: 102px;
     display: flex;
@@ -25,7 +25,7 @@
     gap: 20px;
   }
 
-  .sect_fillers_content_title {
+  .sect_set2_content_title {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 32px;
@@ -33,7 +33,7 @@
     color: #1a1a1a;
   }
 
-  .sect_fillers_content_text {
+  .sect_set2_content_text {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 15px;
@@ -41,7 +41,7 @@
     color: #595959;
   }
 
-  .show_all_fillers_text {
+  .show_all_set2_text {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 15px;
@@ -52,17 +52,17 @@
     width: 166px;
   }
 
-  .sect_fillers_container {
+  .sect_set2_container {
     padding-top: 30px;
   }
 
-  .sect_fillers_list {
+  .sect_set2_list {
     display: flex;
     align-items: start;
     justify-content: space-between;
   }
 
-  .sect_fillers_list_item {
+  .sect_set2_list_item {
     border-radius: 5px;
     padding: 15px;
     width: 292px;
@@ -100,13 +100,13 @@
     color: #000;
   }
 
-  .sect_fillers_list_item_link {
+  .sect_set2_list_item_link {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  .sect_fillers_list_item_img {
+  .sect_set2_list_item_img {
     border-radius: 5px;
     width: 262px;
     height: 350px;
@@ -227,8 +227,8 @@
     color: #595959;
   }
 
-  .sect_fillers_list_item:hover,
-  .sect_fillers_list_item:focus {
+  .sect_set2_list_item:hover,
+  .sect_set2_list_item:focus {
     .post_text1 {
       display: -webkit-box;
       -webkit-box-orient: vertical;
@@ -249,8 +249,8 @@
     }
   }
 
-  .sect_fillers_list_item .post_text1:hover,
-  .sect_fillers_list_item .post_text1:focus {
+  .sect_set2_list_item .post_text1:hover,
+  .sect_set2_list_item .post_text1:focus {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;

@@ -70,6 +70,34 @@
 
     backdrop-filter: blur(50px);
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+
+    position: relative;
+  }
+
+  .sale_block {
+    border-radius: 20px;
+    padding: 6px 15px;
+    width: 79px;
+    height: 31px;
+
+    background: #ffca10;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    position: absolute;
+    left: 25px;
+    top: -2px;
+  }
+
+  .sale_text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 136%;
+    text-align: center;
+    color: #000;
   }
 
   .sect_slime_list_item_link {
