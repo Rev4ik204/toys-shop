@@ -1,6 +1,6 @@
 .sect_set2 {
   background: #f9f9f9;
-  
+
   .container {
     padding-top: 30px;
     /* padding-bottom: 30px; */
@@ -10,6 +10,7 @@
 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 80px;
   }
 
   .sect_set2_header {
