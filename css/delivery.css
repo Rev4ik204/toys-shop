@@ -1,6 +1,11 @@
 .delivery {
   .container {
-    background-image: url("../images/img/delivery/delivery.png");
+    background-image:
+     image-set(
+      url("../images/img/delivery/delivery.avif") type("image/avif"),
+      url("../images/img/delivery/delivery.webp") type("image/webp"),
+      url("../images/img/delivery/delivery.png") type("image/.png")
+    );
 
     border-radius: 5px;
     width: 1140px;
