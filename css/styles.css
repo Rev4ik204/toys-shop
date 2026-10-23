@@ -12,6 +12,7 @@
 @import url(./set_banner.css);
 @import url(./opt.css);
 @import url(./video_block.css);
+@import url(./template.css);
 
 :root {
   --font-family: "Montserrat", sans-serif;
