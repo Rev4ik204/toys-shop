@@ -13,6 +13,7 @@
 @import url(./opt.css);
 @import url(./video_block.css);
 @import url(./template.css);
+@import url(./light_start.css);
 
 :root {
   --font-family: "Montserrat", sans-serif;

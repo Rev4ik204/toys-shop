@@ -1,0 +1,77 @@
+.light_start {
+  .container {
+    padding-top: 76px;
+    margin-bottom: 80px;
+  }
+
+  .light_start_title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 138%;
+    color: #1a1a1a;
+
+    margin-bottom: 25px;
+  }
+
+  .light_start_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 127%;
+    color: #595959;
+
+    margin-bottom: 14px;
+  }
+
+  .light_start_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .light_start_list_item {
+  }
+
+  .light_start_list_item_number {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 45px;
+    color: #f3f3f3;
+  }
+
+  .light_start_list_item_point_block {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .light_start_point {
+    border-radius: 100px;
+    padding: 4px;
+    width: 26px;
+    height: 26px;
+
+    background: rgba(210, 97, 232, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .light_start_line {
+    border: 1px dashed #e026ee;
+    width: 206px;
+    height: 0;
+  }
+
+  .light_start_list_item_info {
+  }
+
+  .light_start_list_item_info_title {
+  }
+
+  .light_start_list_item_info_text {
+  }
+}
