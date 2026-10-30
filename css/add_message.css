@@ -1,0 +1,150 @@
+.add_message {
+  .container {
+    border-radius: 5px;
+    padding: 80px 100px;
+    width: 1140px;
+    height: 592px;
+
+    background: radial-gradient(
+      171.18% 225.89% at 78.03% -31.5%,
+      #0ff 0%,
+      #7652dc 25.25%,
+      #8d30d6 67.02%,
+      #b228be 86.1%,
+      #ff1de8 100%
+    );
+
+    padding: 80px 100px 104px;
+
+    position: relative;
+  }
+
+  .star1 {
+    position: absolute;
+    top: 35px;
+    left: 677px;
+  }
+
+  .add_mess_img {
+    position: absolute;
+    top: 0;
+    left: 736px;
+  }
+
+  .star2 {
+    position: absolute;
+    top: 35px;
+    left: 677px;
+    top: 123px;
+    left: 929px;
+  }
+
+  .add_message_main {
+    margin-bottom: 50px;
+  }
+
+  .add_message_title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 138%;
+    color: #fff;
+
+    margin-bottom: 20px;
+  }
+
+  .add_message_text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 147%;
+    color: #fff;
+
+    width: 570px;
+  }
+
+  .contact-form {
+  }
+
+  .contact_block {
+    display: flex;
+    gap: 10px;
+  }
+
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input {
+      border: 1px solid #f1f1f1;
+      border-radius: 4px;
+      padding: 12px 20px;
+      width: 359px;
+      height: 42px;
+    }
+  }
+
+  .form-message {
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 571px;
+    height: 198px;
+
+    background: #f9f9f9;
+
+    margin-bottom: 10px;
+
+    textaria {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form-checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    span {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    input {
+      border: 1px solid #f1f1f1;
+      border-radius: 3px;
+      padding: 8px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  button {
+    border-radius: 30px;
+    padding: 10px 18px;
+    /* width: 171px; */
+    height: 42px;
+
+    box-shadow:
+      inset 0 2px 2px 0 #fff500,
+      inset 0 -2px 2px 0 rgba(65, 0, 78, 0.25),
+      0 4px 10px 0 rgba(47, 47, 47, 0.2);
+    background: #ffca10;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: #000;
+  }
+}
