@@ -15,6 +15,7 @@
 @import url(./template.css);
 @import url(./light_start.css);
 @import url(./add_message.css);
+@import url(./faq.css);
 
 :root {
   --font-family: "Montserrat", sans-serif;

@@ -1,4 +1,6 @@
 .add_message {
+  padding-bottom: 40px;
+  
   .container {
     border-radius: 5px;
     padding: 80px 100px;
