@@ -17,6 +17,7 @@
 @import url(./add_message.css);
 @import url(./faq.css);
 @import url(./news.css);
+@import url(./useful.css);
 
 :root {
   --font-family: "Montserrat", sans-serif;

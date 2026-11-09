@@ -72,11 +72,11 @@
   }
 
   .slider_item_text {
-   font-family: var(--font-family);
-font-weight: 400;
-font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
 
-color: #595959;
+    color: #595959;
 
     border-radius: 0 0 5px 5px;
     padding: 0 15px 15px 15px;
