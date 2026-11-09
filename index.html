@@ -26,15 +26,13 @@
       <div id="light_start"></div>
       <div id="add_message"></div>
       <div id="faq"></div>
-       <div id="news"></div>
-       <div id="useful"></div>
+      <div id="news"></div>
+      <div id="useful"></div>
       <a href="#" class="scroll_top" aria-label="Вернуться наверх">
         <span class="scroll_arrow"></span>
       </a>
     </main>
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
+    <footer id="footer"></footer>
     <script>
       // Функция для загрузки кусочка HTML в нужный блок
       function loadComponent(elementId, filePath) {
@@ -66,6 +64,7 @@
       loadComponent("faq", "partials/faq.html");
       loadComponent("news", "partials/news.html");
       loadComponent("useful", "partials/useful.html");
+      loadComponent("footer", "partials/footer.html");
     </script>
   </body>
 </html>
