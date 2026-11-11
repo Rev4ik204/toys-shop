@@ -1,0 +1,120 @@
+.footer {
+  background: radial-gradient(
+      73.21% 39.69% at 26.12% 77.65%,
+      #8436e8 0%,
+      #5d26a9 24.57%,
+      #3d186d 64.93%,
+      #290c4f 100%
+    )
+    /* Figma radial gradient is rotated -89.23deg; CSS radial-gradient() cannot represent rotation */;
+
+  .container {
+    padding: 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer_contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #c12eee;
+  }
+
+  .footer_contact_nav {
+  }
+
+  .footer_contact_list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footer_contact_item:first-child {
+    margin-right: 60px;
+  }
+
+  .contact_box {
+    margin-bottom: 5px;
+
+    display: flex;
+    gap: 5px;
+  }
+
+  .contact {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 133%;
+    color: #fff;
+  }
+
+  .contact_text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    color: #a890ff;
+
+    padding-left: 20px;
+  }
+
+  .footer_contact_btn {
+    border-radius: 30px;
+    padding: 10px 18px;
+    width: 200px;
+    /* height: 42px; */
+
+    box-shadow:
+      inset 0 2px 2px 0 #fff500,
+      inset 0 -2px 2px 0 rgba(65, 0, 78, 0.25),
+      0 4px 10px 0 rgba(47, 47, 47, 0.2);
+    background: #ffca10;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: #000;
+  }
+
+  .main_nav {
+     padding-bottom: 40px;
+    border-bottom: 2px solid #c12eee;
+  }
+
+  .footer_main_nav {
+  }
+
+  .footer_main_list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footer_main_item {
+    width: 263px;
+  }
+
+  .footer_main_item:nth-child(2){
+    padding-right: 30px;
+  }
+
+  .footer_main_item_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer_main_item_list_item {
+  }
+
+  .footer_main_item_link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 136%;
+    color: #fff;
+  }
+}
