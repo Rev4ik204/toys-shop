@@ -9,7 +9,7 @@
     /* Figma radial gradient is rotated -89.23deg; CSS radial-gradient() cannot represent rotation */;
 
   .container {
-    padding: 40px 30px;
+    padding: 0 30px 40px 30px;
 
     display: flex;
     flex-direction: column;
@@ -20,7 +20,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
+    height: 127px;
     border-bottom: 2px solid #c12eee;
   }
 
@@ -29,7 +30,7 @@
 
   .footer_contact_list {
     display: flex;
-    gap: 30px;
+    gap: 22px;
   }
 
   .footer_contact_item:first-child {
@@ -49,6 +50,8 @@
     font-size: 15px;
     line-height: 133%;
     color: #fff;
+
+    width: 150px;
   }
 
   .contact_text {
@@ -80,8 +83,13 @@
     color: #000;
   }
 
+  .footer_contact_btn:focus,
+  .footer_contact_btn:hover {
+    border: 5px solid #c12eee;
+  }
+
   .main_nav {
-     padding-bottom: 40px;
+    padding-bottom: 40px;
     border-bottom: 2px solid #c12eee;
   }
 
@@ -97,7 +105,7 @@
     width: 263px;
   }
 
-  .footer_main_item:nth-child(2){
+  .footer_main_item:nth-child(2) {
     padding-right: 30px;
   }
 
@@ -116,5 +124,81 @@
     font-size: 14px;
     line-height: 136%;
     color: #fff;
+  }
+
+  .footer_main_item_link:focus,
+  .footer_main_item_link:hover {
+    color: #c12eee;
+    font-weight: 800;
+  }
+
+  .contact_box:hover,
+  .contact_box:focus {
+    img {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(64%)
+        saturate(3776%) hue-rotate(274deg) brightness(97%) contrast(98%);
+    }
+
+    .contact,
+    .contact {
+      color: #c12eee;
+      font-weight: 800;
+    }
+  }
+
+  .below_footer {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .loco_container {
+    
+  }
+
+  .logo_link {
+  }
+
+  .logo {
+      filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(2%)
+      hue-rotate(96deg) brightness(108%) contrast(100%);
+  }
+
+  .below_footer_transfer_list {
+     display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .below_footer_transfer_list_item {
+  }
+
+  .below_footer_transfer_list_item_link {
+     display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .below_footer_transfer_list_item_text {
+     font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    color: #fff;
+  }
+
+  .footer_soc_list {
+    display: flex;
+    gap: 35px;
+    margin-right: 132px;
+  }
+
+  .footer_soc_item {
+    img{
+      width: 20px;
+    }
   }
 }
