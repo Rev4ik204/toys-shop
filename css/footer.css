@@ -127,7 +127,9 @@
   }
 
   .footer_main_item_link:focus,
-  .footer_main_item_link:hover {
+  .footer_main_item_link:hover,
+  .service_info_item_link:hover,
+  .service_info_item_link:focus {
     color: #c12eee;
     font-weight: 800;
   }
@@ -147,28 +149,24 @@
   }
 
   .below_footer {
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   .loco_container {
-    
   }
 
   .logo_link {
   }
 
   .logo {
-      filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(2%)
+    filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(2%)
       hue-rotate(96deg) brightness(108%) contrast(100%);
   }
 
   .below_footer_transfer_list {
-     display: flex;
+    display: flex;
     gap: 40px;
     align-items: center;
   }
@@ -177,13 +175,18 @@
   }
 
   .below_footer_transfer_list_item_link {
-     display: flex;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    color: #fff;
+    display: flex;
     align-items: center;
     gap: 10px;
   }
 
   .below_footer_transfer_list_item_text {
-     font-family: var(--font-family);
+    font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 157%;
@@ -197,8 +200,28 @@
   }
 
   .footer_soc_item {
-    img{
+    img {
       width: 20px;
     }
+  }
+
+  .footer_service_info {
+  }
+
+  .service_info_list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .service_info_item {
+  }
+
+  .footer_copiraite,
+  .service_info_item_link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    color: #a890ff;
   }
 }
