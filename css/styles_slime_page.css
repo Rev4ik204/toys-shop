@@ -1,0 +1,180 @@
+@import url(./fonts.css);
+@import url(./header.css);
+@import url(./hero_slime_page.css);
+
+/* @import url(./hero.css);
+@import url(./slider.css);
+@import url(./our_brands.css);
+@import url(./slimes.css);
+@import url(./fillers.css);
+@import url(./aquamozaika.css);
+@import url(./delivery.css);
+@import url(./set1.css);
+@import url(./set2.css);
+@import url(./set_banner.css);
+@import url(./opt.css);
+@import url(./video_block.css);
+@import url(./template.css);
+@import url(./light_start.css);
+@import url(./add_message.css);
+@import url(./faq.css);
+@import url(./news.css);
+@import url(./useful.css); */
+@import url(./footer.css);
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Bebas", sans-serif;
+}
+
+:root {
+  --primary-color: ;
+  --text-color: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 150%;
+  background: #fff;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.color_svg {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(2%)
+    hue-rotate(96deg) brightness(108%) contrast(100%);
+}
+.color2_svg {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(9%) saturate(644%)
+    hue-rotate(354deg) brightness(102%) contrast(80%);
+}
+
+.sub_social_list_item:first-child:hover,
+.sub_social_list_item:first-child:focus,
+.sub_social_list_item_list_item:hover,
+.sub_social_list_item_list_item:focus {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(77%) saturate(7219%)
+    hue-rotate(281deg) brightness(99%) contrast(107%);
+
+  .color_svg {
+    transform: rotate(360deg);
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  /* transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+@property --scroll-progress {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+@keyframes scroll-progress {
+  from {
+    --scroll-progress: 0%;
+  }
+  to {
+    --scroll-progress: 100%;
+  }
+}
+
+@keyframes show-scroll-button {
+  0%,
+  5% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  15%,
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+body {
+  animation: scroll-progress linear both;
+  animation-timeline: scroll(root block);
+}
+
+.scroll_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  background: conic-gradient(#fd17a1 var(--scroll-progress), #e5e5e5 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #a11fce;
+  font-size: 26px;
+  text-decoration: none;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+
+  animation: show-scroll-button linear both;
+  animation-timeline: scroll(root block);
+}
+
+.scroll_top::before{
+  content: "";
+  position: absolute;
+  inset:5px;
+  border-radius: 50%;
+  background:#fff ;
+}
+
+.scroll_arrow{
+  position: relative;
+  z-index: 1;
+  width: 4px;
+  height: 26px;
+
+  background: #a11fce;
+  border-radius: 3px;
+}
+
+.scroll_arrow::before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -7px;
+  width: 14px;
+  height: 14px;
+  border-top: 4px solid #a11fce;
+  border-left: 4px solid #a11fce;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}

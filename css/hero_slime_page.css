@@ -1,0 +1,84 @@
+.hero_slime_page {
+  .container {
+  }
+
+  .slime_page_main_info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding-bottom: 30px;
+  }
+
+  .breadcamp {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .breadcamp_main {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #e026ee;
+    /* text-decoration: solid; */
+    border-bottom: 1px solid #e026ee;
+  }
+
+  .breadcamp_slime {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #838383;
+  }
+
+  .slime_page_title_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .slime_page_title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 138%;
+    color: #1a1a1a;
+  }
+
+  .slime_page_buy {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 147%;
+    color: #e026ee;
+
+    border-bottom: 1px solid #e026ee;
+  }
+
+  .slime_filters_box {
+  }
+
+  .slime_filters_list {
+    display: flex;
+    gap: 10px;align-items: center;
+  }
+
+  .slime_filter_item {
+  }
+
+  .slime_filter_item_btn {
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 15px 20px;
+
+    height: 46px;
+
+    background-color: transparent;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a1a1a;
+  }
+}

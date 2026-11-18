@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles_slime_page.css">
+    <title>Магазин Игрушек</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="main">
+      <div id="hero"></div>
+      <!-- <div id="hero"></div>
+      <div id="slider"></div>
+      <div id="brands"></div>
+      <div id="slime"></div>
+      <div id="fillers"></div>
+      <div id="aquamozaika"></div>
+      <div id="delivery"></div>
+      <div id="set1"></div>
+      <div id="set2"></div>
+      <div id="set_banner"></div>
+      <div id="opt"></div>
+      <div id="video_block"></div>
+      <div id="template"></div>
+      <div id="light_start"></div>
+      <div id="add_message"></div>
+      <div id="faq"></div>
+      <div id="news"></div>
+      <div id="useful"></div> -->
+      <a href="#" class="scroll_top" aria-label="Вернуться наверх">
+        <span class="scroll_arrow"></span>
+      </a>
+    </main>
+    <footer id="footer">
+     
+    </footer>
+    <script>
+      // Функция для загрузки кусочка HTML в нужный блок
+      function loadComponent(elementId, filePath) {
+        fetch(filePath)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch((error) => console.error("Ошибка загрузки:", error));
+      }
+
+      // Загружаем наши части
+      loadComponent("header", "./partials/header.html");
+      loadComponent("hero", "./partials/hero_slime_page.html");
+      loadComponent("slider", "partials/slider.html");
+      loadComponent("brands", "partials/brands.html");
+      loadComponent("slime", "partials/slime.html");
+      loadComponent("fillers", "partials/fillers.html");
+      loadComponent("aquamozaika", "partials/aquamozaika.html");
+      loadComponent("delivery", "partials/delivery.html");
+      loadComponent("set1", "partials/set1.html");
+      loadComponent("set2", "partials/set2.html");
+      loadComponent("set_banner", "partials/set_banner.html");
+      loadComponent("opt", "partials/opt.html");
+      loadComponent("video_block", "partials/video_block.html");
+      loadComponent("template", "partials/template.html");
+      loadComponent("light_start", "partials/light_start.html");
+      loadComponent("add_message", "partials/add_message.html");
+      loadComponent("faq", "partials/faq.html");
+      loadComponent("news", "partials/news.html");
+      loadComponent("useful", "partials/useful.html");
+      loadComponent("footer", "partials/footer.html");
+    </script>
+  </body>
+</html>
