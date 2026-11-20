@@ -44,6 +44,7 @@
           .then((response) => response.text())
           .then((data) => {
             document.getElementById(elementId).innerHTML = data;
+            document.querySelector(elementId).innerHTML = data;
           })
           .catch((error) => console.error("Ошибка загрузки:", error));
       }
@@ -69,6 +70,12 @@
       loadComponent("news", "partials/news.html");
       loadComponent("useful", "partials/useful.html");
       loadComponent("footer", "partials/footer.html");
+      loadComponent(".by_slime1", "partials/slimes/slime1.html");
+
+      loadComponent("slime2", "partials/slimes/slime2.html");
+      loadComponent("slime3", "partials/slimes/slime3.html");
+
+
     </script>
   </body>
 </html>
