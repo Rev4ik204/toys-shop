@@ -90,7 +90,7 @@
   .form-message {
     border: 1px solid #f1f1f1;
     border-radius: 4px;
-    padding: 12px 20px;
+   
     width: 571px;
     height: 198px;
 
@@ -98,9 +98,28 @@
 
     margin-bottom: 10px;
 
-    textaria {
+    overflow: hidden;
+
+    textarea {
+      display: block;
       width: 100%;
       height: 100%;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      background: transparent;
+      border-radius: 4px;
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: 150%;
+      color: #333;
+
+      resize:none ;
+      &::placeholder{
+        color:#888
+         ;
+      }
     }
   }
 

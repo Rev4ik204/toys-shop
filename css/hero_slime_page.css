@@ -84,7 +84,7 @@
   }
 
   .slime_page_sect_slime {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     /* padding-bottom: 30px; */
 
     /* max-width: 1138px; */
@@ -94,7 +94,8 @@
     margin-right: auto;
 
     .sect_slime_container {
-      padding-top: 30px;
+      /* padding-top: 30px; */
+      
     }
 
     .sect_slime_list {

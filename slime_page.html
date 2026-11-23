@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/styles_slime_page.css">
+    <link rel="stylesheet" href="./css/styles_slime_page.css" />
     <title>Магазин Игрушек</title>
   </head>
   <body>
     <div id="header"></div>
     <main class="main">
       <div id="hero"></div>
+      <div id="set_banner"></div>
+
       <!-- <div id="hero"></div>
       <div id="slider"></div>
       <div id="brands"></div>
@@ -34,48 +36,58 @@
         <span class="scroll_arrow"></span>
       </a>
     </main>
-    <footer id="footer">
-     
-    </footer>
+    <footer id="footer"></footer>
     <script>
       // Функция для загрузки кусочка HTML в нужный блок
-      function loadComponent(elementId, filePath) {
-        fetch(filePath)
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById(elementId).innerHTML = data;
-            document.querySelector(elementId).innerHTML = data;
-          })
-          .catch((error) => console.error("Ошибка загрузки:", error));
+      async function loadComponent(selector, filePath) {
+        try {
+          const response = await fetch(filePath);
+
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const html = await response.text();
+          const elements = document.querySelectorAll(selector);
+
+          if (elements.length === 0) {
+            console.warn(`Елементи не знайдені: ${selector}`);
+            return;
+          }
+
+          elements.forEach((element) => {
+            element.innerHTML = html;
+          });
+        } catch (error) {
+          console.error("Ошибка загрузки:", error);
+        }
       }
 
       // Загружаем наши части
-      loadComponent("header", "./partials/header.html");
-      loadComponent("hero", "./partials/hero_slime_page.html");
-      loadComponent("slider", "partials/slider.html");
-      loadComponent("brands", "partials/brands.html");
-      loadComponent("slime", "partials/slime.html");
-      loadComponent("fillers", "partials/fillers.html");
-      loadComponent("aquamozaika", "partials/aquamozaika.html");
-      loadComponent("delivery", "partials/delivery.html");
-      loadComponent("set1", "partials/set1.html");
-      loadComponent("set2", "partials/set2.html");
-      loadComponent("set_banner", "partials/set_banner.html");
-      loadComponent("opt", "partials/opt.html");
-      loadComponent("video_block", "partials/video_block.html");
-      loadComponent("template", "partials/template.html");
-      loadComponent("light_start", "partials/light_start.html");
-      loadComponent("add_message", "partials/add_message.html");
-      loadComponent("faq", "partials/faq.html");
-      loadComponent("news", "partials/news.html");
-      loadComponent("useful", "partials/useful.html");
-      loadComponent("footer", "partials/footer.html");
+      loadComponent("#header", "./partials/header.html");
+      loadComponent("#hero", "./partials/hero_slime_page.html");
+      // loadComponent("slider", "partials/slider.html");
+      // loadComponent("brands", "partials/brands.html");
+      // loadComponent("slime", "partials/slime.html");
+      // loadComponent("fillers", "partials/fillers.html");
+      // loadComponent("aquamozaika", "partials/aquamozaika.html");
+      // loadComponent("delivery", "partials/delivery.html");
+      // loadComponent("set1", "partials/set1.html");
+      // loadComponent("set2", "partials/set2.html");
+      loadComponent("#set_banner", "partials/set_banner.html");
+      // loadComponent("opt", "partials/opt.html");
+      // loadComponent("video_block", "partials/video_block.html");
+      // loadComponent("template", "partials/template.html");
+      // loadComponent("light_start", "partials/light_start.html");
+      // loadComponent("add_message", "partials/add_message.html");
+      // loadComponent("faq", "partials/faq.html");
+      // loadComponent("news", "partials/news.html");
+      // loadComponent("useful", "partials/useful.html");
+      loadComponent("#footer", "partials/footer.html");
       loadComponent(".by_slime1", "partials/slimes/slime1.html");
 
-      loadComponent("slime2", "partials/slimes/slime2.html");
-      loadComponent("slime3", "partials/slimes/slime3.html");
-
-
+      loadComponent(".by_slime2", "partials/slimes/slime2.html");
+      loadComponent(".by_slime3", "partials/slimes/slime3.html");
     </script>
   </body>
 </html>
